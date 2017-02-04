@@ -49,7 +49,7 @@ def get_contract_source_json(max, outfname, template):
 
 	print "Getting contract source"
 
-	for page in tqdm(xrange(1731, max_pages+1)):
+	for page in tqdm(xrange(1, max_pages+1)):
 		if(len(source_json) >= max): break
 
 		contracts = run_re_link(contract_pattern, template % page)
